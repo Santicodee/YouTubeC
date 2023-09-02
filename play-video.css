@@ -1,0 +1,175 @@
+.play-container {
+  padding-left: 1em;
+  padding-top: 4em;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.play-video {
+  flex-basis: 59%;
+}
+.play-vid-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+.left-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.left-info img {
+  width: 3em;
+  border-radius: 50%;
+}
+.Join {
+  width: 5em;
+  height: 3em;
+  border-radius: 2em;
+  border-style: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.subs {
+  width: 8em;
+  height: 3em;
+  border-radius: 2em;
+  border-style: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.right-info {
+  display: flex;
+  align-items: center;
+}
+.right-info img {
+  width: 2em;
+  margin-left: 1em;
+}
+.right-side {
+  flex-basis: 38%;
+}
+.play-video video {
+  width: 100%;
+  border-radius: 0.4em;
+}
+.side {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+.thumb {
+  width: 15em;
+  border-radius: 0.4em;
+}
+.title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.yeah {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .play-video video {
+    width: 100%;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .play-video {
+    width: 48em;
+  }
+  .thumb {
+    width: 10em;
+    height: 5em;
+  }
+  .title {
+    font-size: 0.8rem;
+  }
+  .yeah {
+    font-size: 0.7rem;
+  }
+  .left-info img {
+    width: 2.5em;
+  }
+  .left-info p {
+    font-size: 0.7rem;
+  }
+  .Join,
+  .subs {
+    height: 2em;
+  }
+  .Join {
+    width: 3em;
+  }
+  .subs {
+    width: 5em;
+  }
+  .right-info img {
+    width: 1.5em;
+    margin-left: 0.5em;
+  }
+}
+
+@media (max-width: 465px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    width: 45em;
+  }
+
+  .play-vid-info {
+    width: 46em;
+    margin-bottom: 1em;
+  }
+  .play-video video {
+    width: 96%;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .play-video {
+    width: 48em;
+  }
+  .thumb {
+    width: 12em;
+    height: 6em;
+  }
+  .title {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  .yeah {
+    font-size: 1rem;
+  }
+  .left-info img {
+    width: 4em;
+  }
+  .left-info p {
+    font-size: 1rem;
+  }
+  .Join,
+  .subs {
+    height: 3em;
+  }
+  .Join {
+    width: 6em;
+  }
+  .subs {
+    width: 8em;
+  }
+  .right-info img {
+    width: 2em;
+    margin-left: 0.5em;
+  }
+}

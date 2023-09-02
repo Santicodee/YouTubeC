@@ -1,0 +1,165 @@
+.container {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  z-index: -1;
+  padding-left: 7em;
+}
+.big-container {
+  padding-left: 0;
+}
+.banner img {
+  width: 70em;
+  height: 20em;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.vid-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  gap: 0.5em;
+  width: 18em;
+  place-items: center;
+}
+.vid-list img {
+  width: 18em;
+  border-radius: 0.5em;
+}
+.vid-info {
+  display: flex;
+  gap: 0.5em;
+}
+.vid-info img {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
+.info a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+.info {
+  line-height: 1.3em;
+}
+.info p {
+  line-height: 2em;
+  color: gray;
+}
+.list-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 1fr 1fr auto;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .banner img {
+    width: 40em;
+    height: 14em;
+  }
+  .banner {
+    margin-left: 3em;
+  }
+  .vid-list img {
+    width: 12em;
+  }
+  .vid-info img {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .info a,
+  .info p {
+    font-size: 0.8rem;
+  }
+  .vid-list {
+    max-width: 12em;
+    margin-left: 22%;
+  }
+  .list-container {
+    grid-template-columns: 250px 250px 250px;
+  }
+  .nav {
+    padding-top: 9.5em;
+  }
+}
+@media (max-width: 426px) {
+  .banner img {
+    width: 19em;
+    height: 10em;
+  }
+  .banner {
+    margin-left: 3em;
+  }
+  .vid-list img {
+    width: 18em;
+  }
+  .vid-info img {
+    width: 2.5em;
+    height: 2.5em;
+  }
+  .info a,
+  .info p {
+    font-size: 1rem;
+  }
+  .vid-list {
+    max-width: 21em;
+    justify-content: center;
+    padding-left: 1%;
+  }
+  .list-container {
+    grid-template-columns: 450px;
+  }
+  .nav {
+    padding-top: 6em;
+  }
+}
+
+@media (max-width: 376px) {
+  .nav {
+    padding-top: 3em;
+  }
+  .banner {
+    margin-left: 4em;
+  }
+  .vid-list {
+    margin-left: 23%;
+  }
+}
+
+@media (max-width: 320px) {
+  .banner img {
+    width: 15em;
+    height: 8em;
+  }
+
+  .vid-list img {
+    width: 15em;
+  }
+  .vid-info img {
+    width: 2em;
+    height: 2em;
+  }
+  .info a,
+  .info p {
+    font-size: 0.8rem;
+  }
+  .vid-list {
+    max-width: 15em;
+    justify-content: start;
+    margin-left: 2em;
+  }
+  .list-container {
+    grid-template-columns: 250px;
+  }
+  .banner {
+    margin-left: 4em;
+  }
+}
